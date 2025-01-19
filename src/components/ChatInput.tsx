@@ -24,7 +24,7 @@ export const ChatInput = ({ onSend, disabled }: ChatInputProps) => {
       <Input
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        placeholder="Type a message..."
+        placeholder="Type a message here..."
         disabled={disabled}
         className="flex-1"
       />
