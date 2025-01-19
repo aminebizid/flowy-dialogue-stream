@@ -36,16 +36,16 @@ export const ChatInput = ({ onSend, disabled }: ChatInputProps) => {
         onKeyDown={handleKeyDown}
         placeholder="Type a message here..."
         disabled={disabled}
-        className="flex-1 min-h-[60px] max-h-[200px] resize-none pr-12"
+        className="flex-1 min-h-[60px] max-h-[200px] resize-none pr-10"
         rows={1}
       />
       <Button 
         type="submit" 
         disabled={disabled || !message.trim()} 
         size="icon"
-        className="absolute bottom-2 right-2"
+        className="absolute bottom-1.5 right-1.5 h-7 w-7"
       >
-        <Send className="h-4 w-4" />
+        <Send className="h-3.5 w-3.5" />
       </Button>
     </form>
   );
