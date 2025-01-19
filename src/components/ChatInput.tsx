@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { Send } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 import { useState, FormEvent, KeyboardEvent } from "react";
 
 interface ChatInputProps {
@@ -43,9 +43,9 @@ export const ChatInput = ({ onSend, disabled }: ChatInputProps) => {
         type="submit" 
         disabled={disabled || !message.trim()} 
         size="icon"
-        className="absolute bottom-1.5 right-1.5 h-7 w-7"
+        className="absolute bottom-1.5 right-1.5 h-7 w-7 rounded-full"
       >
-        <Send className="h-3.5 w-3.5" />
+        <ArrowUp className="h-3.5 w-3.5" />
       </Button>
     </form>
   );
