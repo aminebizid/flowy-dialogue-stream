@@ -71,7 +71,7 @@ export const ChatMessage = ({ content, isBot, isStreaming }: ChatMessageProps) =
               ),
               // Style blockquotes
               blockquote: ({ children }) => (
-                <blockquote className="border-l-4 border-primary pl-4 my-2 italic">
+                <blockquote className="pl-4 italic">
                   {children}
                 </blockquote>
               ),
