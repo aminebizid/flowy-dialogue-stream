@@ -53,7 +53,6 @@ export const ChatMessage = ({ content, isBot, isStreaming }: ChatMessageProps) =
           >
             {content}
           </ReactMarkdown>
-          {isStreaming && "▊"}
         </div>
       </div>
     </div>
