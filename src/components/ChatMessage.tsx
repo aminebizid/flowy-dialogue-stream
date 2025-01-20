@@ -26,7 +26,7 @@ export const ChatMessage = ({ content, isBot, isStreaming }: ChatMessageProps) =
     >
       <div
         className={cn(
-          "max-w-[80%] rounded-2xl px-4 py-2 shadow-sm bg-chat-user"
+          "max-w-[80%] rounded-2xl px-4 shadow-sm bg-chat-user"
         )}
       >
         <div className="text-gray-800 whitespace-pre-wrap break-words dark:prose-invert prose-sm max-w-none [&>*:first-child]:mt-0 [&>*:last-child]:mb-0">
@@ -53,7 +53,6 @@ export const ChatMessage = ({ content, isBot, isStreaming }: ChatMessageProps) =
           >
             {content}
           </ReactMarkdown>
-        </div>
       </div>
     </div>
   );
