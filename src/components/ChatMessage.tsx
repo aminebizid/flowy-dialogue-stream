@@ -26,7 +26,7 @@ export const ChatMessage = ({ content, isBot, isStreaming }: ChatMessageProps) =
       )}
     >
            <ReactMarkdown
-            className="prose-sm dark:prose-invert max-w-none"
+            className="prose-sm dark:prose-invert"
             remarkPlugins={[remarkGfm]}
             components={{
               code({ node, className, children, ...props }) {
