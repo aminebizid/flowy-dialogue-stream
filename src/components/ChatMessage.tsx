@@ -21,7 +21,7 @@ export const ChatMessage = ({ content, isBot, isStreaming }: ChatMessageProps) =
   return (
     <div
       className={cn(
-        "flex w-full mb-4 animate-fade-in",
+        "flex w-full mb-2 animate-fade-in",
         isBot ? "justify-start" : "justify-end"
       )}
     >
