@@ -43,10 +43,10 @@ const Index = () => {
     
     // Simulate bot response
     const responses = [
-      "I understand your question. Let me **help** you with that.",
-      "That's an **interesting** point! Here's what I think...",
-      "I'd be happy to **assist** you with that request.",
-      "Let me provide some **information** about that.",
+      "I understand your question. Let me **help** you with that.\n```python\nprint(a)\n```",
+      "That's an **interesting** point! Here's what I think...\n```python\nprint(a)\n```",
+      "I'd be happy to **assist** you with that request.\n```python\nprint(a)\n```",
+      "Let me provide some **information** about that.\n```python\nprint(a)\n```",
     ];
     const randomResponse = responses[Math.floor(Math.random() * responses.length)];
     await simulateStream(randomResponse);
