@@ -41,7 +41,7 @@ export const ChatMessage = ({ content, isBot, isStreaming }: ChatMessageProps) =
                     {String(children).replace(/\n$/, '')}
                   </SyntaxHighlighter>
                 ) : (
-                  <code {...props} className={cn(className, 'bg-muted px-1.5 rounded-md')}>
+                  <code {...props} className={cn(className, 'py-0 bg-muted px-1.5 rounded-md')}>
                     {children}
                   </code>
                 );
