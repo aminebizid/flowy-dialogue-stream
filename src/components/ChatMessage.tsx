@@ -25,11 +25,6 @@ export const ChatMessage = ({ content, isBot, isStreaming }: ChatMessageProps) =
         isBot ? "justify-start" : "justify-end"
       )}
     >
-      <div
-        className={cn(
-          "max-w-[80%] rounded-2xl px-2 bg-chat-user"
-        )}
-      >
            <ReactMarkdown
             className="prose-sm dark:prose-invert max-w-none"
             remarkPlugins={[remarkGfm]}
@@ -84,7 +79,6 @@ export const ChatMessage = ({ content, isBot, isStreaming }: ChatMessageProps) =
           >
             {content}
           </ReactMarkdown>
-    </div>
     </div>
   );
 }
