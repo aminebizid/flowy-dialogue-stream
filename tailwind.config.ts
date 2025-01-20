@@ -73,7 +73,14 @@ export default {
         "fade-in": "fade-in 0.3s ease-out",
         blink: "blink 1.4s infinite both",
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: 'none',
+          },
+        },
+      },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 } satisfies Config;

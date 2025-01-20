@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import ReactMarkdown from "react-markdown";
 
 interface ChatMessageProps {
   content: string;
@@ -20,11 +21,11 @@ export const ChatMessage = ({ content, isBot, isStreaming }: ChatMessageProps) =
           isBot ? "bg-chat-bot" : "bg-chat-user"
         )}
       >
-        <p className="text-gray-800 whitespace-pre-wrap break-words">
-          {content}
+        <div className="text-gray-800 whitespace-pre-wrap break-words prose dark:prose-invert prose-sm max-w-none">
+          <ReactMarkdown>{content}</ReactMarkdown>
           {isStreaming && "▊"}
-        </p>
+        </div>
       </div>
     </div>
   );
-};
+}
