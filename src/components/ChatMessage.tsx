@@ -9,6 +9,13 @@ interface ChatMessageProps {
   isStreaming?: boolean;
 }
 
+interface CodeProps {
+  node?: any;
+  inline?: boolean;
+  className?: string;
+  children?: React.ReactNode;
+}
+
 export const ChatMessage = ({ content, isBot, isStreaming }: ChatMessageProps) => {
   return (
     <div
@@ -26,7 +33,7 @@ export const ChatMessage = ({ content, isBot, isStreaming }: ChatMessageProps) =
         <div className="text-gray-800 whitespace-pre-wrap break-words prose dark:prose-invert prose-sm max-w-none">
           <ReactMarkdown
             components={{
-              code({node, inline, className, children, ...props}) {
+              code({node, inline, className, children, ...props}: CodeProps) {
                 const match = /language-(\w+)/.exec(className || '');
                 return !inline && match ? (
                   <SyntaxHighlighter
